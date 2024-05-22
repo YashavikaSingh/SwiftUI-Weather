@@ -30,16 +30,12 @@ struct ContentView: View {
                 
                 Button{
                 }label: {
-                    Text("Change Day Time")
+                    WeatherButton(title: "Change Day Time", textColor: .blue, backgroundColor: .white)
                 }
-                .font(.system(size: 20, weight: .bold))
-                .frame(width: 280, height: 40)
-                .background(Color.white)
-                
                 Spacer()
             }
         }
-    }  
+    }
 }
 
 
@@ -115,3 +111,4 @@ struct  MainWeatherStatusView: View {
         .padding(.bottom, 50)
     }
 }
+
